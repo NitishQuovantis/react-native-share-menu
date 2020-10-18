@@ -119,7 +119,7 @@ public class ShareMenuModule extends ReactContextBaseJavaModule implements Activ
     String type = intent.getType();
 
     if (type == null) {
-      return;
+      type = "";
     }
 
     if ("text/plain".equals(type)) {
