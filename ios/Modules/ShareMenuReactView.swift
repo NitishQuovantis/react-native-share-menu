@@ -104,16 +104,12 @@ public class ShareMenuReactView: NSObject {
         for provider in attachments {
             if provider.hasItemConformingToTypeIdentifier(kUTTypeURL as String) {
                 urlProvider = provider as? NSItemProvider
-                break
             } else if provider.hasItemConformingToTypeIdentifier(kUTTypeText as String) {
                 textProvider = provider as? NSItemProvider
-                break
             } else if provider.hasItemConformingToTypeIdentifier(kUTTypeImage as String) {
                 imageProvider = provider as? NSItemProvider
-                break
             } else if provider.hasItemConformingToTypeIdentifier(kUTTypeData as String) {
                 dataProvider = provider as? NSItemProvider
-                break
             }
         }
 
